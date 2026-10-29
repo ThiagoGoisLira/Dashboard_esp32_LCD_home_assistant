@@ -466,4 +466,4 @@ O estado não é invertido localmente como se o comando já tivesse sido confirm
 
 Escolha e adicione um arquivo `LICENSE` antes de declarar uma licença pública para o projeto. Se publicar contribuições, descreva o hardware utilizado, a versão do Home Assistant, a integração Sonoff e as bibliotecas testadas. Não inclua credenciais, tokens ou informações privadas nos relatos de problemas.
 
-## By Thigo gois - V1.0
+## By THIAGO GOIS - V1.0
