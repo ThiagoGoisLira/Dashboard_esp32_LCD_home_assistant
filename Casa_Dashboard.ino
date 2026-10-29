@@ -10,14 +10,9 @@
 // ============================================================
 // CASA DASHBOARD - ESP32-WROOM-32 + HC-35S + LCD 1602 I2C
 // Home Assistant / Sonoff
-//
-// Refatoracao: responsabilidades separadas em secoes e funcoes,
-// cadastro de dispositivos orientado a dados e comunicacao HTTP
-// centralizada. O projeto continua em um unico .ino para facilitar
-// a instalacao na Arduino IDE.
-//
-// Botoes ativos em LOW. Confirme que a placa HC-35S fornece o nivel
-// eletrico esperado; INPUT foi mantido para preservar a montagem.
+
+// Botoes ativos em LOW. Confirme que a placa ou modulo de ligação dos botoes
+// fornece o nivel eletrico esperado; INPUT foi mantido para preservar a montagem.
 // ============================================================
 
 // ------------------------- Configuracao ----------------------
@@ -62,9 +57,9 @@ struct DeviceConfig {
 // Para adicionar um dispositivo, cadastre-o aqui. Reservas nao
 // enviam comandos e nao simulam um estado ON/OFF local.
 const DeviceConfig devices[] = {
-  {"Sala",    "switch.interruptor_sonoff_1001578d9b_2", DeviceDomain::SWITCH, true},
-  {"Cozinha", "switch.interruptor_sonoff_1001578d9b_1", DeviceDomain::SWITCH, true},
-  {"Quarto",  "light.pendente_sonoff_10016034a0",       DeviceDomain::LIGHT,  true},
+  {"Sala",    "ID do disposito AQUI!", DeviceDomain::SWITCH, true},
+  {"Cozinha", "ID do disposito AQUI!", DeviceDomain::SWITCH, true},
+  {"Quarto",  "ID do disposito AQUI!",       DeviceDomain::LIGHT,  true},
   {"01 Reserva", nullptr, DeviceDomain::NONE, false},
   {"02 Reserva", nullptr, DeviceDomain::NONE, false},
   {"03 Reserva", nullptr, DeviceDomain::NONE, false},
